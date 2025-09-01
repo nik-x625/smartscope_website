@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  smartscope:
+    build: .
+    ports:
+      - "6000:6000"
+    environment:
+      - NODE_ENV=production
+      - PORT=6000
+      - SMTP_HOST=${SMTP_HOST:-smtp.gmail.com}
+      - SMTP_PORT=${SMTP_PORT:-587}
+      - SMTP_SECURE=${SMTP_SECURE:-false}
+      - SMTP_USER=${SMTP_USER:-your-email@gmail.com}
+      - SMTP_PASS=${SMTP_PASS:-your-app-password}
+      - FROM_EMAIL=${FROM_EMAIL:-noreply@smartscope.com}
+      - TO_EMAIL=${TO_EMAIL:-support@smartscope.com}
+    volumes:
+      - ./data/newsletter:/opt:rw
+      - ./data/chatbot:/opt/chatbot_website:rw
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:6000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  newsletter_data:
+  chatbot_data:
