@@ -1,0 +1,77 @@
+
+Create a modern, fully responsive landing page for a SaaS web application. The website address is smartscope.com. Use modern technologies such as HTML5, CSS3, JavaScript (with frameworks/libraries like React, Next.js), and ensure fast loading, SEO optimization, accessibility, and mobile-first design. Include dark/light mode that follows system preference.
+
+Make sure to include necessary content, but take care that the style of the landing page must not be too busy with confusing the user. The colors also should look not too shiny. Try to choose the green modern color as the main theme.
+
+The application is a SaaS tool for building proposals, statements of work (SoW), and effort estimations and proposal preparation. It provides a wizard-based approach and AI assistance to automate proposal creation, cost estimation, and reduce manual work. Research SoW templates, best practices for effort estimation, and proposal writing to populate the website with relevant and professional content.
+
+The landing page should include the following sections:
+
+1. **Hero Section:**  
+   - Catchy headline highlighting AI-assisted proposal creation  
+   - Subheadline about saving time, resources, and automating manual tasks  
+   - Call-to-action buttons (e.g., “Get Started,” “Try Demo”)  
+   - Hero image or video showcasing the product in use
+
+2. **Features Section:**  
+   - Highlight AI bot capabilities: automated proposal building, cost estimation, effort estimation, templates, collaboration, and efficiency gains  
+   - Use icons, images, or short videos for each feature  
+
+3. **How It Works / Workflow:**  
+   - Explain the wizard-based process for building proposals  
+   - Visual step-by-step guides or illustrations
+
+4. **Use Cases / Benefits:**  
+   - Different industries or roles that can benefit (e.g., consulting, IT services, project management)  
+   - Include statistics or example scenarios  
+
+5. **Testimonials / Social Proof:**  
+   - Example user testimonials, company logos, or case studies  
+
+6. **Pricing Plans:**  
+   - Showcase different subscription tiers with features and benefits
+
+7. **Blog Section:**  
+   - Include 3–5 starter blog posts about proposal writing, SoW best practices, AI in project management, and cost estimation. Make sure by clicking on the blog cards, the page for the blog is opened in a new tab with complete blog post proper structure.
+
+8. **About Section:**  
+   - Company mission, vision, and values  
+
+9. **Contact Section:**  
+   - Form for inquiries, support email, and social media links  
+make the contact section fully functional. Create config file with placeholders for sender email username and password (or any similar approach) that I can later fill and make the contact page ready to use. Then immediately after the launching this app, the contact form is functional.
+
+10. **Dashboard Access:**  
+    - Link to dashboard.smartscope24.com  
+    - Describe login/sign-up flow  
+
+11. **FAQ Section:**  
+    - Common questions about AI proposal building, pricing, security, and SoW templates  
+
+12. **Call to Action / Newsletter Signup:**  
+    - Encourage users to subscribe or start free trial  
+- make sure the newsletter form reads the email address and logs them to the file in /opt/newsletter_addresses
+
+13. **Chat bot -with modern style**  
+    - Communicate directly with users visiting the page,make it minimal for the moment, by writing the user messages to the filesystem to address /opt/chatbot_website/ . Later I will enable interactive messaging bot. Make sure when a user visits the website and writes to the chatbot, the confirmation message is displayed to them that we will get back to you as soon as possible. Ask email, phone (optional), name, etc. from the user for getting back for more contacts.
+
+
+
+
+
+**Design & UX Guidelines:**  
+- Use modern, clean, and professional design  
+- Include relevant photos, icons, or videos, embedded or linked properly  
+- Animations, micro-interactions, or hover effects where appropriate  
+- Mobile-friendly and responsive  
+- Light/dark mode toggle  
+- Include SEO-friendly meta tags, titles, and descriptions  
+- Ensure accessibility (ARIA labels, alt texts, etc.)
+
+**Additional Instructions:**  
+- Generate all the text content, including headlines, subheadings, blog posts, and calls-to-action  
+- Suggest additional sections or features if they improve user engagement or clarity  
+- Provide code ready to deploy or exportable to modern web frameworks
+
+create a docker-compose and dockerfile, then I can easily run it on port 6000 of my debian vps.
+
