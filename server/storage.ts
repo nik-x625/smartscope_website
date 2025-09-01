@@ -29,8 +29,8 @@ export class MemStorage implements IStorage {
   }
 
   private ensureDirectoriesExist() {
-    const newsletterDir = "/opt";
-    const chatbotDir = "/opt/chatbot_website";
+    const newsletterDir = path.resolve(process.cwd(), "data/newsletter");
+    const chatbotDir = path.resolve(process.cwd(), "data/chatbot");
     
     try {
       if (!fs.existsSync(newsletterDir)) {
@@ -83,7 +83,7 @@ export class MemStorage implements IStorage {
     
     // Save to file system as requested
     try {
-      const filePath = "/opt/newsletter_addresses";
+      const filePath = path.resolve(process.cwd(), "data/newsletter/newsletter_addresses");
       const data = `${newsletter.email},${newsletter.createdAt.toISOString()}\n`;
       fs.appendFileSync(filePath, data);
     } catch (error) {
@@ -104,7 +104,7 @@ export class MemStorage implements IStorage {
     
     // Save to file system as requested
     try {
-      const filePath = `/opt/chatbot_website/message_${id}.json`;
+      const filePath = path.resolve(process.cwd(), `data/chatbot/message_${id}.json`);
       const data = JSON.stringify({
         ...chatMessage,
         createdAt: chatMessage.createdAt.toISOString()

@@ -3,12 +3,12 @@ import { Play } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-background to-muted py-20 lg:py-32">
+    <section className="relative overflow-hidden bg-gradient-to-br from-background via-primary/5 to-accent/10 py-20 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in-up">
             <h1 className="text-4xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-              AI-Powered <span className="text-primary">Proposal Creation</span> Made Simple
+              AI-Powered <span className="text-primary bg-primary/10 px-2 py-1 rounded-lg">Proposal Creation</span> Made Simple
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               Transform your proposal workflow with intelligent automation. Create professional statements of work, 

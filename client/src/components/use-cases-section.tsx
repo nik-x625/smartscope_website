@@ -27,7 +27,7 @@ export default function UseCasesSection() {
   ];
 
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-20 bg-gradient-to-b from-accent/10 to-primary/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-5xl font-bold text-foreground mb-4">
@@ -42,7 +42,7 @@ export default function UseCasesSection() {
           {useCases.map((useCase, index) => (
             <div 
               key={index}
-              className="bg-card border border-border rounded-xl p-6 text-center hover:shadow-lg transition-all group"
+              className="bg-card border border-primary/20 rounded-xl p-6 text-center hover:shadow-lg hover:shadow-primary/20 hover:border-accent/40 transition-all group"
               data-testid={`card-use-case-${index}`}
             >
               <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">

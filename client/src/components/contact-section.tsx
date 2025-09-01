@@ -56,7 +56,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-muted/30">
+    <section id="contact" className="py-20 bg-gradient-to-br from-accent/10 via-primary/5 to-accent/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
@@ -108,7 +108,7 @@ export default function ContactSection() {
             </div>
           </div>
           
-          <div className="bg-card border border-border rounded-xl p-8">
+          <div className="bg-card border border-primary/20 rounded-xl p-8 shadow-lg shadow-primary/10">
             <form onSubmit={handleSubmit} data-testid="form-contact">
               <div className="space-y-6">
                 <div>
