@@ -83,7 +83,7 @@ export default function Navigation() {
             </Button>
             
             <a 
-              href="https://dashboard.smartscope24.com" 
+              href="https://dashboard.smart-scope.io" 
               target="_blank" 
               rel="noopener noreferrer"
               data-testid="link-dashboard"
@@ -169,7 +169,7 @@ export default function Navigation() {
                 )}
               </Button>
               <a 
-                href="https://dashboard.smartscope24.com" 
+                href="https://dashboard.smart-scope.io" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 data-testid="link-mobile-dashboard"

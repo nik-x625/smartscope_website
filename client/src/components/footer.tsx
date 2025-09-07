@@ -48,7 +48,7 @@ export default function Footer() {
               </li>
               <li>
                 <a 
-                  href="https://dashboard.smartscope24.com" 
+                  href="https://dashboard.smart-scope.io" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-foreground transition-colors"

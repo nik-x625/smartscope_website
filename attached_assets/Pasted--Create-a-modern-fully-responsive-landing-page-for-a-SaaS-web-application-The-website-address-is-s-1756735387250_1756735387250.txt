@@ -42,7 +42,7 @@ The landing page should include the following sections:
 make the contact section fully functional. Create config file with placeholders for sender email username and password (or any similar approach) that I can later fill and make the contact page ready to use. Then immediately after the launching this app, the contact form is functional.
 
 10. **Dashboard Access:**  
-    - Link to dashboard.smartscope24.com  
+    - Link to dashboard.smart-scope.io  
     - Describe login/sign-up flow  
 
 11. **FAQ Section:**  
