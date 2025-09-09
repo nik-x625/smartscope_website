@@ -19,10 +19,11 @@ export default function HeroSection() {
                 size="lg" 
                 className="bg-primary hover:bg-accent transition-all transform hover:scale-105"
                 data-testid="button-start-trial"
+                asChild
               >
-                Start Free Trial
+                <a href="https://dashboard.smart-scope.io/sign-up">Start Free Trial</a>
               </Button>
-              <Button 
+              {/* <Button 
                 variant="outline" 
                 size="lg" 
                 className="hover:bg-secondary transition-colors"
@@ -30,7 +31,7 @@ export default function HeroSection() {
               >
                 <Play className="w-4 h-4 mr-2" />
                 Watch Demo
-              </Button>
+              </Button> */}
             </div>
             <p className="text-sm text-muted-foreground mt-4">
               No credit card required • 14-day free trial

@@ -80,9 +80,9 @@ export default function BlogPost() {
               <Button className="bg-primary hover:bg-accent" data-testid="button-start-trial">
                 Start Free Trial
               </Button>
-              <Button variant="outline" data-testid="button-watch-demo">
+              {/* <Button variant="outline" data-testid="button-watch-demo">
                 Watch Demo
-              </Button>
+              </Button> */}
             </div>
           </div>
         </article>
