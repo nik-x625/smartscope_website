@@ -7,9 +7,16 @@ services:
     container_name: smartscope_website_replit_container_v2
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.smartscope-main.rule=Host(`smart-scope.io`)"
+      - "traefik.http.routers.smartscope-main.rule=(Host(`smart-scope.io`) || Host(`www.smart-scope.io`))"
+      #- "traefik.http.routers.smartscope-main.rule=Host(smart-scope.io,www.smart-scope.io)"
       - "traefik.http.routers.smartscope-main.entrypoints=websecure"
       - "traefik.http.routers.smartscope-main.tls.certresolver=letsencrypt"
+
+      # for redirection of www
+      - "traefik.http.middlewares.www-redirect.redirectregex.regex=^https?://www\\.(.*)"
+      - "traefik.http.middlewares.www-redirect.redirectregex.replacement=https://$1"
+      - "traefik.http.routers.smartscope-main.middlewares=www-redirect@docker"
+
       - "traefik.http.services.smartscope-main.loadbalancer.server.port=4040"
     environment:
       - NODE_ENV=production
