@@ -1,8 +1,8 @@
 services:
   smartscope_website_replit_v2:
     build: .
-    ports:
-      - "4040:4040"
+    #ports:
+    #  - "4040:4040"
     image: smartscope_website_replit_image_v2    
     container_name: smartscope_website_replit_container_v2
     labels:
@@ -20,7 +20,7 @@ services:
       - "traefik.http.services.smartscope-main.loadbalancer.server.port=4040"
     environment:
       - NODE_ENV=production
-      - PORT=4040
+      #- PORT=4040
       - SMTP_HOST=${SMTP_HOST:-smtp.gmail.com}
       - SMTP_PORT=${SMTP_PORT:-587}
       - SMTP_SECURE=${SMTP_SECURE:-false}
